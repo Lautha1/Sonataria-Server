@@ -1,0 +1,35 @@
+{
+  "name": "sna-server",
+  "version": "1.0.0",
+  "description": "Server for Sonataria",
+  "main": "index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "devServ": "nodemon --watch server server/index.js",
+    "serv": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "client": "esbuild --bundle --minify --target=es6 --outfile=public/bundle.js client/mainapp.jsx",
+    "devClient": "nodemon --watch client -e js,jsx --exec ./node_modules/.bin/esbuild --bundle --sourcemap --target=es6 --outfile=public/bundle.js client/mainapp.jsx"
+  },
+  "author": "Julia Butenhoff, Seth Berrier",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "esbuild": "^0.14.23",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-react": "^7.29.2"
+  }
+}

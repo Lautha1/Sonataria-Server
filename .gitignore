@@ -1,0 +1,8 @@
+# Don't track the content of these folders
+node_modules/
+
+# Don't track the update files
+public/binaryUpdates/*.zip
+
+# No .env files
+*.env
