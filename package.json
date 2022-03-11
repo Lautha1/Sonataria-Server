@@ -17,7 +17,8 @@
   "author": "Julia Butenhoff, Seth Berrier",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "mysql2": "^2.3.3"
   },
   "devDependencies": {
     "dotenv": "^16.0.0",
